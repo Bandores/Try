@@ -1,48 +1,49 @@
 {
+  "source": "jibrand/Plant-dataset ONLY",
   "original_rows": 3648,
-  "usable_unique_rows": 363,
-  "unique_plants": 294,
-  "train_rows": 272,
-  "test_rows": 91,
-  "accuracy": 0.6044,
-  "balanced_accuracy": 0.6088,
-  "class_counts": {
-    "Умеренный": 197,
-    "Регулярный": 143,
-    "Редкий": 23
-  },
-  "report": {
-    "Регулярный": {
-      "precision": 0.5806451612903226,
-      "recall": 1.0,
-      "f1-score": 0.7346938775510204,
-      "support": 36.0
+  "clean_rows": 363,
+  "synthetic_rows": 8712,
+  "plants": 294,
+  "train_rows": 6534,
+  "test_rows": 2178,
+  "accuracy": 0.9913,
+  "balanced_accuracy": 0.9911,
+  "confusion_matrix": [
+    [
+      1348,
+      11
+    ],
+    [
+      8,
+      811
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9941002949852508,
+      "recall": 0.9919058130978661,
+      "f1-score": 0.9930018416206261,
+      "support": 1359.0
     },
-    "Редкий": {
-      "precision": 0.2727272727272727,
-      "recall": 0.5,
-      "f1-score": 0.35294117647058826,
-      "support": 6.0
+    "1": {
+      "precision": 0.98661800486618,
+      "recall": 0.9902319902319903,
+      "f1-score": 0.9884216940889702,
+      "support": 819.0
     },
-    "Умеренный": {
-      "precision": 0.8888888888888888,
-      "recall": 0.32653061224489793,
-      "f1-score": 0.47761194029850745,
-      "support": 49.0
-    },
-    "accuracy": 0.6043956043956044,
+    "accuracy": 0.9912764003673095,
     "macro avg": {
-      "precision": 0.5807537743021615,
-      "recall": 0.608843537414966,
-      "f1-score": 0.5217489981067054,
-      "support": 91.0
+      "precision": 0.9903591499257154,
+      "recall": 0.9910689016649281,
+      "f1-score": 0.9907117678547981,
+      "support": 2178.0
     },
     "weighted avg": {
-      "precision": 0.7263202747073714,
-      "recall": 0.6043956043956044,
-      "f1-score": 0.5710946343438146,
-      "support": 91.0
+      "precision": 0.9912867065520465,
+      "recall": 0.9912764003673095,
+      "f1-score": 0.9912795547388877,
+      "support": 2178.0
     }
   },
-  "caveats": "Watering descriptions are categorical and CSV contains shifted/misaligned fields. This is NOT a sensor-trained watering-time predictor. Random split over plant names is optimistic; many repeats may relate."
+  "warning": "TEST LABELS SYNTHETIC: scores measure agreement with the user-defined heuristic, NOT real-world irrigation accuracy. Numeric sensor readings are generated for demonstration."
 }
