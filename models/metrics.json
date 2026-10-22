@@ -1,0 +1,20 @@
+{
+  "records": 3588,
+  "training_records": 2870,
+  "testing_records": 718,
+  "split": "Chronological last 20%",
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "class_counts": {
+    "0.0": 2997,
+    "1.0": 591
+  },
+  "features": [
+    "crop type",
+    "Temperature",
+    "Humidity",
+    "Soil Moisture",
+    "Soil Tempertuer"
+  ],
+  "warning": "Target is historic irrigation ON/OFF, not verified plant water requirement. Crop codes lack named species."
+}
