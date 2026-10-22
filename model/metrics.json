@@ -1,0 +1,48 @@
+{
+  "original_rows": 3648,
+  "usable_unique_rows": 363,
+  "unique_plants": 294,
+  "train_rows": 272,
+  "test_rows": 91,
+  "accuracy": 0.6044,
+  "balanced_accuracy": 0.6088,
+  "class_counts": {
+    "Умеренный": 197,
+    "Регулярный": 143,
+    "Редкий": 23
+  },
+  "report": {
+    "Регулярный": {
+      "precision": 0.5806451612903226,
+      "recall": 1.0,
+      "f1-score": 0.7346938775510204,
+      "support": 36.0
+    },
+    "Редкий": {
+      "precision": 0.2727272727272727,
+      "recall": 0.5,
+      "f1-score": 0.35294117647058826,
+      "support": 6.0
+    },
+    "Умеренный": {
+      "precision": 0.8888888888888888,
+      "recall": 0.32653061224489793,
+      "f1-score": 0.47761194029850745,
+      "support": 49.0
+    },
+    "accuracy": 0.6043956043956044,
+    "macro avg": {
+      "precision": 0.5807537743021615,
+      "recall": 0.608843537414966,
+      "f1-score": 0.5217489981067054,
+      "support": 91.0
+    },
+    "weighted avg": {
+      "precision": 0.7263202747073714,
+      "recall": 0.6043956043956044,
+      "f1-score": 0.5710946343438146,
+      "support": 91.0
+    }
+  },
+  "caveats": "Watering descriptions are categorical and CSV contains shifted/misaligned fields. This is NOT a sensor-trained watering-time predictor. Random split over plant names is optimistic; many repeats may relate."
+}
